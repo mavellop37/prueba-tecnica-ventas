@@ -1,0 +1,25 @@
+﻿@model IEnumerable<PruebaTecnicaVentas.Models.ResumenMensualVenta>
+
+<h1>Resumen Mensual de Ventas</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Periodo</th>
+            <th class="text-center">Cantidad Ventas</th>
+            <th class="text-center">Total Ventas</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Producto</td>
+                <td>@item.Periodo.ToString("MM/yy")</td>
+                <td class="text-center">@item.CantidadVentas</td>
+                <td class="text-center">@item.TotalVentas</td>
+            </tr>
+        }
+    </tbody>
+</table>
