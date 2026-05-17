@@ -110,7 +110,7 @@ Ejemplo:
 # Ejecución
 
 1. Restaurar base de datos SQL Server.
-2. Configurar cadena de conexión en 'appsettings.json'.
+2. Configurar cadena de conexión.
 3. Ejecutar aplicación desde Visual Studio 2022.
 4. Acceder a:
    - `/Productos`
